@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="signup-container">
+
+        <h1>Create Account</h1>
+        <p class="subtitle">Sign up to continue your journey</p>
+
+        <form id="signupForm">
+
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <small id="nameError" class="error"></small>
+            </div>
+
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <small id="emailError" class="error"></small>
+            </div>
+
+
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter 10-digit phone number"
+                    maxlength="10"
+                    required
+                >
+
+                <small id="phoneError" class="error"></small>
+            </div>
+
+
+            <!-- Location -->
+            <div class="form-group">
+                <label for="location">Location / City</label>
+
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Enter your city"
+                    required
+                >
+
+                <small id="locationError" class="error"></small>
+            </div>
+
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+
+                <div class="password-box">
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        class="toggle-password"
+                        onclick="togglePassword('password')"
+                    >
+                        Show
+                    </button>
+
+                </div>
+
+                <small id="passwordError" class="error"></small>
+            </div>
+
+
+            <!-- Confirm Password -->
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+
+                <div class="password-box">
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm your password"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        class="toggle-password"
+                        onclick="togglePassword('confirmPassword')"
+                    >
+                        Show
+                    </button>
+
+                </div>
+
+                <small id="confirmPasswordError" class="error"></small>
+            </div>
+
+
+            <!-- Signup Button -->
+            <button type="submit" class="signup-btn">
+                Sign Up
+            </button>
+
+
+            <!-- SignIn Link -->
+            <p class="login-link">
+                Already have an account?
+                <a href="SignIn.html">Sign In</a>
+            </p>
+
+        </form>
+
+    </div>
+
+
+    <!-- JavaScript Link -->
+    <script src="js/index.js"></script>
+
+</body>
+</html>
