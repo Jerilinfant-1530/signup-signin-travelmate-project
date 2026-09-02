@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #6a11cb,
+        #2575fc
+    );
+
+    padding: 20px;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 450px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.signup-container h1 {
+    text-align: center;
+
+    color: #333;
+
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #333;
+
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #6a11cb;
+
+    box-shadow:
+        0 0 5px rgba(106, 17, 203, 0.3);
+}
+
+.password-box {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.password-box input {
+    flex: 1;
+}
+
+.toggle-password {
+    padding: 11px 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #eeeeee;
+
+    cursor: pointer;
+}
+
+.toggle-password:hover {
+    background-color: #dddddd;
+}
+
+.error {
+    display: block;
+
+    color: red;
+
+    font-size: 13px;
+
+    margin-top: 5px;
+}
+
+.signup-btn {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #6a11cb,
+        #2575fc
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(37, 117, 252, 0.4);
+}
+
+.login-link {
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #666;
+}
+
+.login-link a {
+    color: #6a11cb;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Tablet */
+
+@media screen and (max-width: 1024px) {
+
+    .signup-container {
+        max-width: 500px;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .signup-container {
+        padding: 22px;
+    }
+
+    .signup-container h1 {
+        font-size: 26px;
+    }
+
+    .password-box {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .toggle-password {
+        width: 100%;
+    }
+}
+
+/* ==============================
+   TRAVELMATE PAGE FIX
+================================ */
+
+.travel-page {
+    display: block;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+}
+
+.travel-page .hero {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #6a11cb,
+        #2575fc
+    );
+}
+
+.travel-page .service-card {
+    transition: 0.3s;
+}
+
+.travel-page .service-card:hover {
+    transform: translateY(-8px);
+}
+
+.travel-page .service-card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.travel-page .gallery-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+
+    transition: 0.3s;
+}
+
+.travel-page .gallery-img:hover {
+    transform: scale(1.03);
+}
+
+.travel-page footer a {
+    transition: 0.3s;
+}
+
+.travel-page footer a:hover {
+    opacity: 0.7;
+}
+
+/* Tablet */
+
+@media screen and (max-width: 1024px) {
+
+    .travel-page .hero {
+        min-height: 400px;
+    }
+
+    .travel-page .hero h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+
+    .travel-page .hero {
+        min-height: 350px;
+    }
+
+    .travel-page .hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .travel-page .gallery-img {
+        height: 230px;
+    }
+}
